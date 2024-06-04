@@ -1,0 +1,99 @@
+.form-title {
+    text-align: right;
+    margin-bottom: 2px;
+    font-size: 50px;
+}
+
+.form-container {
+    margin: auto;
+    width: 50%;
+    padding-top: 10px;
+}
+
+.form-container label {
+    margin-right: 3px;
+    width: 120px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="file"],
+.form-container select {
+    width: calc(100% - 130px); /* Adjusted width to accommodate the label */
+    height: 40px;
+    margin-bottom: 10px; /* Added margin-bottom for spacing */
+}
+
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Adjust layout for course checkboxes */
+.form-group .form-container > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* CSS for Gender radio buttons
+.radio-group {
+    display: flex;
+    flex-direction: column; /* Set to column to stack the radio buttons vertically 
+}
+
+.radio-group div {
+    margin-bottom: 5px; Add margin between radio buttons 
+} */
+
+/* CSS for Course checkboxes */
+.course-group {
+    display: flex;
+}
+
+.course-group div {
+    margin-right: 5px; /* Add margin between checkboxes */
+}
+
+.course-group div:last-child {
+    margin-right: 0; /* Remove margin for the last checkbox to prevent extra space */
+}
+
+.form-group {
+    margin-bottom: 5px; /* Add some margin between form groups */
+}
+
+/* Other existing styles */
+.form-title {
+    text-align: right;
+    margin-bottom: 2px;
+    font-size: 50px;
+}
+
+.form-container {
+    margin: auto;
+    width: 50%;
+    padding-top: 10px;
+}
+
+.form-container label {
+    margin-right: 1px;
+    width: 120px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="file"],
+.form-container select {
+    width: calc(100% - 130px); /* Adjusted width to accommodate the label */
+    height: 40px;
+    margin-bottom: 10px; /* Added margin-bottom for spacing */
+}
+
+

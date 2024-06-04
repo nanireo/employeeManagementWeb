@@ -1,0 +1,27 @@
+.navbar-ul {
+    list-style: none;
+    display: flex;
+    background: #f0f0f0;
+    padding: 10px;
+  }
+  
+  .navbar-list-item {
+    margin-right: 10px;
+  }
+  
+  .navbar-button {
+    padding: 5px 10px;
+    background: none;
+    color: #000;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navbar-logout-button {
+    padding: 5px 10px;
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
