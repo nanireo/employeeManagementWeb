@@ -16,7 +16,7 @@ const EditEmployeeDetailsPage = () => {
 
   useEffect(() => {
     // Fetch contractor data using the ID
-    axios.get(`https://employeemanagementweb.onrender.com/api/employee/${id}`)
+    axios.get(`${process.env.REACT_APP_API_KEY}/api/employee/${id}`)
         .then((response) => {
           console.log( "after get the data upadatePage " + response);
             setContractorData(response.data);

@@ -30,7 +30,7 @@ const ViewEmployeeDetails = ({ initialData }) => {
       
       <div className="employee-details">
         <div className="profile-pic-container">
-          <img className="profile-pic" src={`https://employeemanagementweb.onrender.com/${profilePic}`} alt={Name + "'s profile picture"} />
+          <img className="profile-pic" src={`${process.env.REACT_APP_API_KEY}/${profilePic}`} alt={Name + "'s profile picture"} />
         </div>
         <p>Name: {Name}</p>
         <p>Email: {Email}</p>

@@ -24,7 +24,7 @@ const EmployeeList = () => {
 
   const fetchEmployees = async () => {
     try {
-      const response = await axios.get(`https://employeemanagementweb.onrender.com/api/employee?search=${search}`);
+      const response = await axios.get(`${process.env.REACT_APP_API_KEY}/api/employee?search=${search}`);
       // Sort employees based on the selected key
       const sortedEmployees = response.data.sort((a, b) => {
         if (sortBy.key && a[sortBy.key] && b[sortBy.key]) {
