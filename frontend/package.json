@@ -21,11 +21,10 @@
   "scripts": {
     "start": "react-scripts start",
     "dev": "nodemon server.js",
-    "build": "react-scripts build",
+    "build": "echo 'Starting build...' && react-scripts build && echo 'Build completed'",
+    "build": "your-framework build --output publish",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "build":"npm i",
-    "build": "[my-framework] build --output public"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
