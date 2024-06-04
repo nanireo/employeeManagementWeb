@@ -39,7 +39,7 @@ const EditEmployeeDetails = ({ employeeID, initialData }) => {
             if (file) {
                 formDataWithFile.append('profilePic', file);
             }
-            await axios.put(`http://localhost:4000/api/employee/${employeeID}`, formDataWithFile, {
+            await axios.put(`https://employeemanagementweb.onrender.com/api/employee/${employeeID}`, formDataWithFile, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }
