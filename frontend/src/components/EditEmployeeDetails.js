@@ -26,6 +26,10 @@ const EditEmployeeDetails = ({ employeeID, initialData }) => {
         const updatedStatus = formData.Status ? 0 : 1; // Convert to number
         setFormData({ ...formData, Status: updatedStatus });
     };
+
+
+    const apiUrl = process.env.REACT_APP_API_KEY || 'https://employeemanagementweb.onrender.com';
+
     
 
     const handleSubmit = async (e) => {
@@ -39,7 +43,7 @@ const EditEmployeeDetails = ({ employeeID, initialData }) => {
             if (file) {
                 formDataWithFile.append('profilePic', file);
             }
-            await axios.put(`${process.env.REACT_APP_API_KEY}/api/employee/${employeeID}`, formDataWithFile, {
+            await axios.put(`${apiUrl}/api/employee/${employeeID}`, formDataWithFile, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }

@@ -23,6 +23,9 @@ const ViewEmployeeDetails = ({ initialData }) => {
     navigate('/EmployeeListPages');
   };
 
+  const apiUrl = process.env.REACT_APP_API_KEY || 'https://employeemanagementweb.onrender.com';
+
+
   return (
     <>
     <Navbar/>
@@ -30,7 +33,7 @@ const ViewEmployeeDetails = ({ initialData }) => {
       
       <div className="employee-details">
         <div className="profile-pic-container">
-          <img className="profile-pic" src={`${process.env.REACT_APP_API_KEY}/${profilePic}`} alt={Name + "'s profile picture"} />
+          <img className="profile-pic" src={`${apiUrl}/${profilePic}`} alt={Name + "'s profile picture"} />
         </div>
         <p>Name: {Name}</p>
         <p>Email: {Email}</p>
