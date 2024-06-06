@@ -27,7 +27,7 @@ const EmployeeList = () => {
 
   const fetchEmployees = async () => {
     try {
-      const response = await axios.get(`apiUrl?search=${search}`);
+      const response = await axios.get(`${apiUrl}?search=${search}`);
       // Sort employees based on the selected key
       const sortedEmployees = response.data.sort((a, b) => {
         if (sortBy.key && a[sortBy.key] && b[sortBy.key]) {
