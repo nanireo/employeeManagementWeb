@@ -76,7 +76,7 @@ const CreateEmployee = () => {
             return;
         }
 
-        const apiUrl = process.env.REACT_APP_API_KEY || 'https://employeemanagementweb.onrender.com';
+        const apiUrl = process.env.REACT_APP_API_KEY || 'https://employeemanagementweb.onrender.com/api/employee';
 
 
         try {
@@ -84,7 +84,7 @@ const CreateEmployee = () => {
             for (let key in formData) {
                 formDataToSend.append(key, formData[key]);
             }
-            const response = await axios.post(`${apiUrl}/api/employee`, formDataToSend, {
+            const response = await axios.post(apiUrl, formDataToSend, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }

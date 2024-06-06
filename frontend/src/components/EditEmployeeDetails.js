@@ -28,7 +28,7 @@ const EditEmployeeDetails = ({ employeeID, initialData }) => {
     };
 
 
-    const apiUrl = process.env.REACT_APP_API_KEY || 'https://employeemanagementweb.onrender.com';
+    const apiUrl = process.env.REACT_APP_API_KEY || 'https://employeemanagementweb.onrender.com/api/employee';
 
     
 
@@ -43,7 +43,7 @@ const EditEmployeeDetails = ({ employeeID, initialData }) => {
             if (file) {
                 formDataWithFile.append('profilePic', file);
             }
-            await axios.put(`${apiUrl}/api/employee/${employeeID}`, formDataWithFile, {
+            await axios.put(`apiUrl/${employeeID}`, formDataWithFile, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }

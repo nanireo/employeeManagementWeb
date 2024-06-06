@@ -11,13 +11,13 @@ const LoginForm = () => {
   const navigate = useNavigate();
 
 
-  const apiUrl = process.env.REACT_APP_API_KEY || 'https://employeemanagementweb.onrender.com';
+  const apiUrl = process.env.REACT_APP_API_KEY || 'https://employeemanagementweb.onrender.com/api/login';
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       
-  const response = await axios.post(`${apiUrl}/api/login`, { "f_userName":f_userName, "f_Pwd":f_Pwd });
+  const response = await axios.post(apiUrl, { "f_userName":f_userName, "f_Pwd":f_Pwd });
   console.log("frontend response", response)
 
     // const response = await axios.post('https://employee-management-web-phi.vercel.app//login', { "f_userName":f_userName, "f_Pwd":f_Pwd });

@@ -23,7 +23,7 @@ const ViewEmployeeDetails = ({ initialData }) => {
     navigate('/EmployeeListPages');
   };
 
-  const apiUrl = process.env.REACT_APP_API_KEY || 'https://employeemanagementweb.onrender.com';
+  const apiUrl = process.env.REACT_APP_API_KEY || 'https://employeemanagementweb.onrender.com/api/employee';
 
 
   return (
@@ -33,7 +33,7 @@ const ViewEmployeeDetails = ({ initialData }) => {
       
       <div className="employee-details">
         <div className="profile-pic-container">
-          <img className="profile-pic" src={`${apiUrl}/${profilePic}`} alt={Name + "'s profile picture"} />
+          <img className="profile-pic" src={apiUrl/`${profilePic}`} alt={Name + "'s profile picture"} />
         </div>
         <p>Name: {Name}</p>
         <p>Email: {Email}</p>

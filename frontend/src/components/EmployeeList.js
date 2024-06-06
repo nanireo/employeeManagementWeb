@@ -22,12 +22,12 @@ const EmployeeList = () => {
     fetchEmployees();
   }, [search, sortBy]);
 
-  const apiUrl = process.env.REACT_APP_API_KEY || 'https://employeemanagementweb.onrender.com';
+  const apiUrl = process.env.REACT_APP_API_KEY || 'https://employeemanagementweb.onrender.com/api/employee';
 
 
   const fetchEmployees = async () => {
     try {
-      const response = await axios.get(`${apiUrl}/api/employee?search=${search}`);
+      const response = await axios.get(`apiUrl?search=${search}`);
       // Sort employees based on the selected key
       const sortedEmployees = response.data.sort((a, b) => {
         if (sortBy.key && a[sortBy.key] && b[sortBy.key]) {
