@@ -47,7 +47,7 @@ const EmployeeList = () => {
 
   const deleteEmployee = async (id) => {
     try {
-      await axios.delete(`http://localhost:4000/api/employee/${id}`);
+      await axios.delete(`${apiUrl}/${id}`);
       console.log("Deleted Employee with ID:", id);
       fetchEmployees();
       setShowSuccessMessage(true);
