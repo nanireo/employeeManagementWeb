@@ -11,7 +11,7 @@ const LoginForm = () => {
   const navigate = useNavigate();
 
 
-  const apiUrl = process.env.REACT_APP_API_KEY || 'https://employeemanagementweb.onrender.com/api/login';
+  const apiUrl = 'https://employeemanagementweb.onrender.com/api/login';
 
   const handleSubmit = async (e) => {
     e.preventDefault();
