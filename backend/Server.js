@@ -33,7 +33,7 @@ mongoose.connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true })
 
 // Routes
 app.use('/api/employee', employeeRoutes);
-app.use('/api', loginRoutes);
+app.use('/api/login', loginRoutes);
 
 // Server creation
 

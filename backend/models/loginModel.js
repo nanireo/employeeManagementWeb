@@ -10,6 +10,6 @@ const userSchema = new mongoose.Schema({
   // f_Pwd: { type: String, required: true }
 });
 
-const t_login = mongoose.model('t_login', userSchema);
+const t_logins = mongoose.model('t_logins', userSchema);
 
-module.exports = t_login;
+module.exports = t_logins;
