@@ -43,7 +43,7 @@ const EditEmployeeDetails = ({ employeeID, initialData }) => {
             if (file) {
                 formDataWithFile.append('profilePic', file);
             }
-            await axios.put(`apiUrl/${employeeID}`, formDataWithFile, {
+            await axios.put(`${apiUrl}/${employeeID}`, formDataWithFile, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }

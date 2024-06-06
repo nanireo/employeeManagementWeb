@@ -14,7 +14,7 @@ const ViewEmployeeDetailsPage = () => {
 
   useEffect(() => {
     // Fetch contractor data using the ID
-    axios.get(`${process.env.REACT_APP_API_KEY}/api/employee/${id}`)
+    axios.get(`${process.env.REACT_APP_API_KEY}/${id}`)
         .then((response) => {
           //console.log( "after get the data View Contractor Details Page " , response);
             setContractorData(response.data);
