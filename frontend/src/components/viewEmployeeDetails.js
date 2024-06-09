@@ -4,6 +4,7 @@ import '../style/viewEmployeeDetails.css';
 import Navbar from './navbar';
 import { useNavigate } from 'react-router-dom';
 
+          //<img className="profile-pic" src={'https://employeemanagementweb.onrender.com'/`${profilePic}`} alt={Name + "'s profile picture"} />
 
 const ViewEmployeeDetails = ({ initialData }) => {
   const navigate = useNavigate();
@@ -33,7 +34,7 @@ const ViewEmployeeDetails = ({ initialData }) => {
       
       <div className="employee-details">
         <div className="profile-pic-container">
-          <img className="profile-pic" src={'https://employeemanagementweb.onrender.com'/`${profilePic}`} alt={Name + "'s profile picture"} />
+        <img src={`https://employeemanagementweb.onrender.com/${profilePic}`} alt={`${Name}'s profile picture`} style={{ width: '50px', height: '50px' }} />
         </div>
         <p>Name: {Name}</p>
         <p>Email: {Email}</p>
