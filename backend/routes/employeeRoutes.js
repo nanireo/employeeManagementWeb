@@ -8,7 +8,7 @@ const Employees = require('../models/employeeModel');
 // Multer middleware for file uploads
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, './https://github.com/nanireo/employeeManagementWeb/tree/main/backend/uploadimage');
+    cb(null, './backend/uploadimage');
   },//cb(null, './uploadimage/'); https://github.com/nanireo/employeeManagementWeb/tree/main/backend/uploadimage
   filename: function (req, file, cb) {
     cb(null, file.fieldname + "-" + Date.now() + path.extname(file.originalname));
