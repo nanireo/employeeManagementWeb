@@ -23,7 +23,7 @@ const ViewEmployeeDetails = ({ initialData }) => {
     navigate('/EmployeeListPages');
   };
 
-  const apiUrl = process.env.REACT_APP_API_KEY || 'https://employeemanagementweb.onrender.com/api/employee';
+  const apiUrl = process.env.REACT_APP_API_KEY || 'https://employeemanagementweb.onrender.com';
 
 
   return (
