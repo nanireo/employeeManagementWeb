@@ -155,8 +155,10 @@ const EmployeeList = () => {
               <tr key={employee._id} className="rowStyle">
                 <td className="cellStyle">{index+1}</td>
                 <td className="cellStyle">{employee.EID}</td>
-                <td>
-                  <img src={`http://localhost:4000/${employee.profilePic}`} alt="EmployeeImage" style={{ width: '50px', height: '50px' }} />
+                <td>                 
+                   <img src={`https://employeemanagementweb.onrender.com/${employee.profilePic}`} alt="EmployeeImage" style={{ width: '50px', height: '50px' }} />
+
+                  {/* <img src="https://github.com/nanireo/employeeManagementWeb/tree/main/backend/uploadimage" alt="EmployeeImage" style={{ width: '50px', height: '50px' }} /> */}
                 </td>
                 <td className="cellStyle">{employee.Name}</td>
                 <td className="cellStyle">{employee.Email}</td>
